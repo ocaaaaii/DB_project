@@ -19,8 +19,8 @@
 ## 安裝
 ### 1. 取得原始碼
 ```bash
-git clone https://github.com/Text-Analytics-and-Retrieval/db_class2023.git
-cd db_class2023/
+git clone https://github.com/BillWu0222/DB_project.git
+cd DB_Travel_Project/
 ```
 ### 2. 建立環境
 ```bash!	
