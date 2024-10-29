@@ -1,8 +1,8 @@
-# 中山網路書店
+# 海島旅遊套餐系統
 [![GitHub release](https://img.shields.io/github/release/Text-Analytics-and-Retrieval/db_class2023)](https://github.com/Text-Analytics-and-Retrieval/db_class2023/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/Text-Analytics-and-Retrieval/db_class2023)](https://github.com/Text-Analytics-and-Retrieval/db_class2023/main/LICENSE)
 
-一套使用Flask開發的網路書店系統，後端使用Postgres資料庫
+一套使用Flask開發的海島旅遊系統，後端使用Postgres資料庫
 <br>
 
 ## 功能
