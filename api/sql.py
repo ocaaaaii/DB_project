@@ -6,11 +6,11 @@ from psycopg2 import pool
 class DB:
     connection_pool = pool.SimpleConnectionPool(
         1, 100,  # 最小和最大連線數
-        user='your_account',
-        password='password',
+        user='project_19',
+        password='t958bp',
         host='140.117.68.66',
         port='5432',
-        dbname='DB_name'
+        dbname='project_19'
     )
 
     @staticmethod

@@ -1,39 +1,50 @@
 {% extends "base.html" %}
 {% block head %}
 {{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
 {% endblock head %}
 
-{% block title %}Login Page{% endblock title%}
+{% block title %}會員登入 - Island Explorer{% endblock title%}
 
-{% block content%}
-<div class="position-absolute top-50 start-50 translate-middle outer_div ">
-    <a href="{{ url_for('index') }}"><img class="icon" src="{{ url_for('static', filename='./img/home.png') }}"></a>
-    <h1 class="register_title mb-4 mt-4">會員登入</h1>
-    <div class="form_div">
-        <form  method='post' action={{ url_for('api.login') }} >
-            <p class="mb-4">
-                帳號：<input type="text" name="account" required/>
-            </p>
-            <p class="mb-4">
-                密碼：<input type="password" name="password" required/>
+{% block content %}
+<div class="register-container">
+    <div class="wave-background">
+        <img src="{{ url_for('static', filename='./img/wave.png') }}" class="wave-img">
+    </div>
+
+    <div class="register-card">
+        <a href="{{ url_for('index') }}">
+            <img class="icon" src="{{ url_for('static', filename='./img/island.png') }}"> 
+        </a>
+        <h1 class="register-title">會員登入</h1>
+
+        <form method='post' action="{{ url_for('api.login') }}">
+            <div class="input-group">
+                <label for="account">帳號：</label>
+                <input type="text" id="account" name="account" required/>
+            </div>
+
+            <div class="input-group">
+                <label for="password">密碼：</label>
+                <input type="password" id="password" name="password" required/>
                 {% with messages = get_flashed_messages() %}
                 {% if messages %}
-                
-                <p class="same_accoount">
+                <p class="error-message">
                     {% for i in messages %}
                         {{ i }}
                     {% endfor %}
                 </p>
                 {% endif %}
                 {% endwith %}
-            </p>
-            <p class="mb-4">
+            </div>
+
+            <div class="btn-group">
                 <a href="{{ url_for('index') }}">
-                    <button type="button" class="register_btn">回上頁</button>
+                    <button type="button" class="register-btn">回上頁</button>
                 </a>
-                <button type="submit" class="register_btn">登入</button>
-            </p>
+                <button type="submit" class="register-btn">登入</button>
+            </div>
         </form>
     </div>
 </div>
-{% endblock content%}
+{% endblock content %}

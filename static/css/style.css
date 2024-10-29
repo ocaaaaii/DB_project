@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to bottom, #f0f4f8, #cfe0e8);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content-center {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.index_pic {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.index_title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #004b70;
+    margin-bottom: 30px;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.index_btn {
+    display: flex; /* 使用 flex 讓內容居中 */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px; /* 調整內邊距 */
+    background-color: #BFA275; /* 咖啡色調 */
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold; /* 增強文字可讀性 */
+    cursor: pointer;
+    min-width: 100px; /* 設置按鈕的最小寬度 */
+    height: 50px; /* 設置按鈕的固定高度 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
+    transition: all 0.3s ease;
+}
+
+.index_btn:hover {
+    background-color: #8D714D; /* 懸停的深色調 */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增強懸停時的陰影效果 */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
