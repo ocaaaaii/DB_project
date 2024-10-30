@@ -2,7 +2,7 @@ from typing import Optional
 import psycopg2
 from psycopg2 import pool
 
-# 蕎安測試branch1
+# 蕎安測試branch2
 
 class DB:
     connection_pool = pool.SimpleConnectionPool(
