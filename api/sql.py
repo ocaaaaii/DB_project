@@ -2,6 +2,7 @@ from typing import Optional
 import psycopg2
 from psycopg2 import pool
 
+# 蕎安測試push專案
 
 class DB:
     connection_pool = pool.SimpleConnectionPool(
